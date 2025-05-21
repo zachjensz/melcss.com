@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melbourne CSS</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: grid;
+        place-content: center;
+        margin: 0;
+        padding: 12px;
+        box-sizing: border-box;
+        font-family: system-ui, sans-serif;
+        text-align: center;
+      }
+      body > * {
+        margin-inline: auto;
+      }
+      p {
+        max-width: 40ch;
+        margin-top: 0;
+        text-wrap: pretty;
+      }
+      a {
+        color: rebeccapurple;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .button {
+        display: block;
+        color: inherit;
+        background-color: #f2f2f2;
+        padding: 8px 12px;
+        margin-block: 4px;
+        display: flex;
+        align-items: center;
+        gap: 1ch;
+        width: fit-content;
+      }
+      .button:hover {
+        filter: invert();
+      }
+      ::selection {
+        color: white;
+        background-color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Melbourne CSS</h1>
+    <p>
+      A community in Melbourne that holds meetups over pizza & drinks to share CSS knowledge!
+    </p>
+    <p>
+      Anyone is welcome to join. Events often take place on a weeknight in Richmond or CBD, with occasional bonus special events.
+    </p>
+    <a class="button" href="https://discord.gg/zUycrK4h">
+      <img src="/discord.svg" width="20" height="20" />
+      Chat on Discord
+    </a>
+    <a class="button" href="https://forms.gle/kXoSZ6RrkELmjgJy6">
+      🎤 Give a talk
+    </a>
+    <a class="button" href="https://www.linkedin.com/in/zachjensz">
+      <img src="/linkedin.svg" width="20" height="20" />
+      Your host
+    </a>
+  </body>
+</html>
