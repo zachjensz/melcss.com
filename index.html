@@ -50,6 +50,18 @@
         color: white;
         background-color: rebeccapurple;
       }
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: white;
+          background-color: #222;
+        }
+        .button {
+          background-color: #111;
+        }
+        a img {
+          filter: invert(100%);
+        }
+      }
     </style>
   </head>
   <body>
